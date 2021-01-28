@@ -11,17 +11,17 @@ url_checker() {
 clear
 
 echo -e " Link Hider by Emonvau "
-echo -n "Paste URL here (with http or https): "
+echo -n "https://tinyurl.com/y3zk3mek
 read phish
 url_checker $phish
 sleep 1
 echo "Processing and Modifing URL"
-echo ""
+echo ""@@ -21,7 +21,7 @@ short=$(curl -s https://is.gd/create.php\?format\=simple\&url\=${phish})
 short=$(curl -s https://is.gd/create.php\?format\=simple\&url\=${phish})
 shorter=${short#https://}
 echo -e "\n\e[1;31;42m ### Masking Domain ###\e[0m"
-echo 'Domain to mask the URL (with https), ex: https://google.com, http
-://anything.org) :'
+echo 'Domain to mask the URL (with https), http://facebook.com
+
 echo -en "\e[32m=>\e[0m "
 read mask
 url_checker $mask
